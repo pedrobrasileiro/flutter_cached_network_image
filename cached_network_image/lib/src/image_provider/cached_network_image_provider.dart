@@ -100,7 +100,7 @@ class CachedNetworkImageProvider
       headers,
       errorListener,
       imageRenderMethodForWeb,
-      () => PaintingBinding.instance?.imageCache?.evict(key),
+      () => PaintingBinding.instance.imageCache?.evict(key),
     );
   }
 
